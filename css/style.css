@@ -548,7 +548,7 @@
 .sec3__items .item .btn{
     padding-top: 1.2vw;
 }
-.sec3__items .item .btn a{
+.sec3__items .item .btn > a{
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -561,10 +561,10 @@
     border: 1px solid #000;
     transition: 0.5s;
 }
-.sec3__items .item .btn a:hover{
+.sec3__items .item .btn > a:hover{
     color: #fff;
 }
-.sec3__items .item .btn a::before{
+.sec3__items .item .btn > a::before{
     content: '';
     position: absolute;
     background: #000;
@@ -576,7 +576,7 @@
     border-radius: 50% 50% 0 0;
     transition: 0.5s;
 }
-.sec3__items .item .btn a:hover::before{
+.sec3__items .item .btn > a:hover::before{
     height: 180%;
 }
 .sec3__items .item .title{
@@ -1536,15 +1536,19 @@
 }
 
 /* modals */
-.modals.modal_html{
+
+/* .modals.modal_html{
     display: none;
 }
 .modals.modal_css{
     display: none;
 }
-/* .modals.modal_jQuery{
+.modals.modal_jQuery{
     display: none;
 } */
+.modals.ative{
+    display: flex;
+}
 .modals{
     position: absolute;
     z-index: 1000;
@@ -1554,10 +1558,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1vw;
-    display: flex;
+    
     overflow: hidden;
     flex-direction: column;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    display: none;
 }
 .modal_itme{
     overflow-y: scroll;
@@ -1577,7 +1582,7 @@
    flex-direction: row-reverse;
    border-bottom: 1px solid rgb(192, 192, 192);
 }
-.close a{
+.close i{
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;

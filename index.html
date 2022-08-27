@@ -173,7 +173,188 @@
                                 <a href="#">html </a>
                                 <a href="#">css</a>
                                 <a href="#">jquery</a>
+                                <!-- modals -->
+                                <div class="modals modal_html">
+                                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="xml">
+    &lt;section id="best_product"&gt;
+        &lt;div class="inner"&gt;
+            &lt;p class="blind"&gt;베스트 상품 이미지 슬라이드 갤러리&lt;/p&gt;
+            &lt;h2&gt;
+                Best Product
+                &lt;span&gt;It is the best product of Louvre&lt;/span&gt;
+            &lt;/h2&gt;
+            &lt;div class="gallery_02"&gt;
+                &lt;ul class="slide_gallery_02"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Sac de Flute Bag &lt;br&gt;
+                                &lt;span&gt;319,000원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_01.jpg" alt="Sac de Flute Bag"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Tweed Collar Jacket&lt;br&gt;
+                                &lt;span&gt;239,000원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_02.jpg" alt="Tweed Collar Jacket"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Sac de Fleur Small Bag&lt;br&gt;
+                                &lt;span&gt;319,000원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_03.jpg" alt="Sac de Fleur Small Bag"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Sac de Jardin Large&lt;br&gt;
+                                &lt;span&gt;349,000원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_04.jpg" alt="Sac de Jardin Large Bag"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Sac de Velo toile Small Bag&lt;br&gt;
+                                &lt;span&gt;245,650원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_05.jpg" alt="Sac de Velo toile Small  Bag"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;     
+                                Sac de Crete Toile Bag&lt;br&gt;
+                                &lt;span&gt;219,000원 &lt;/span&gt;  
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="./images/best_product_06.jpg" alt="Sac de Crete Toile Bag"&gt;
+                    &lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="top_btn"&gt;
+            &lt;a href="#"&gt;&lt;img src="./images/top_button.png" alt=""&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_html -->
+                                <div class="modals modal_css">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="css">
+    #best_product .inner>h2{
+        padding-top: 110px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 120px;
+        color: #fff;
+        line-height: 90px;
+    }
+    #best_product .inner>h2>span{
+        display: block; 
+        font-size: 40px;
+    }
+    #best_product .gallery_02{
+        position: absolute;
+        left: 12px; top: 380px;
+        overflow: hidden;
+        width: 1276px; height: 389px;
+    }
+    #best_product .slide_gallery_02{
+        position: absolute;
+        left: 0px; top: 0px;
+        display: flex;
+    }
+    #best_product .slide_gallery_02 li{
+        margin-right: 55px;
+    }
+    #best_product .slide_gallery_02 div{
+        
+        position: absolute;
+        width: 389px; height: 389px;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+    }
+    #best_product .slide_gallery_02 div:hover{
+        opacity: 1;
+    }
+    #best_product .slide_gallery_02 div>p{
+        padding-top: 150px;
+        text-align: center;
+        color: white;
+        font-family: 'Noto Sans KR';
+        font-size: 24px;
+    }
+    #best_product .slide_gallery_02 div>p>span{
+        padding-top: 15px;
+        display: block;
+        font-size: 19px;
+    
+    }
+    #best_product .bx-prev{
+        width: 70px; height: 70px;
+        position: absolute;
+        left: 0px; top: 50%;
+        transform: translateY(-50%);
+        background: url(../images/bestProduct_left_bt-2.png) center no-repeat;
+        color: transparent;
+    }
+    #best_product .bx-next{
+        width: 70px; height: 70px;
+        position: absolute;
+        right: 0px; top: 50%;
+        transform: translateY(-50%);
+        background: url(../images/bestProduct_right_bt-2.png) center no-repeat;
+        color: transparent;
+    }
+
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_css -->
+                                <div class="modals modal_jQuery">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="javascript">
+    $(function(){    
+        /*best_product 슬라이드 갤러리*/
+        $('.slide_gallery_02').bxSlider({
+            auto:true,
+            speed:400,
+            controls:true,
+            autoHover:true,
+            minSlides:3,
+            maxSlides:3,
+            moveSlides:1,
+            slideWidth:389,
+            slideMargin:55,
+            pager:false,
+            
+        });        
+    });
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_jQuery -->
                             </div>
+                            <!-- btn -->
                         </div>
                         <!-- sec3__items__item1 -->
                         <div class="sec3__items__item2 item">
@@ -188,14 +369,15 @@
                             </div>
                             <div class="btn">
                                 <a href="https://sj5466.github.io/site_Laka/">site view</a>
-                                <a href="#">html </a>
+                                <a href="#">html</a>
                                 <a href="#">css</a>
                                 <a href="#">jquery</a>
-                            </div>
-                            <div class="modals modal_html">
-                                <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
-                                <div class="modal_itme">
-                                    <pre><code class="xml">
+
+                                <!-- modals -->
+                                <div class="modals modal_html">
+                                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="xml">
     &lt;div id="contents_nail"&gt;
         &lt;div class="inner" data-scroll&gt;
             &lt;p class="blind"&gt;네일제품&lt;/p&gt;
@@ -275,15 +457,16 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-                                    </code></pre>
+
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
                                 </div>
-                                <!-- modal_itme -->
-                            </div>
-                            <!-- modal_html -->
-                            <div class="modals modal_css">
-                                <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
-                                <div class="modal_itme">
-                                    <pre><code class="css">
+                                <!-- modal_html -->
+                                <div class="modals modal_css">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="css">
     #contents_nail .show_slide{
         margin-top: 149px;
         margin-left: 188px;
@@ -350,20 +533,21 @@
     }
     #contents_nail .bx-controls-direction .bx-next{
         position: absolute;
-        right: 12px;  top: 670px;
+        right: 12px;  top: 670px;å
         color: transparent;
         width: 37px; height: 67px;
         background: url(../images/nail_show_right.png) center top no-repeat;
     }
-                                    </code></pre>
+
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
                                 </div>
-                                <!-- modal_itme -->
-                            </div>
-                            <!-- modal_css -->
-                            <div class="modals modal_jQuery">
-                                <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
-                                <div class="modal_itme">
-                                    <pre><code class="javascript">
+                                <!-- modal_css -->
+                                <div class="modals modal_jQuery">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="javascript">
     $(function(){
         /*visual 슬라이드갤러리*/
         $('.slides').bxSlider({
@@ -373,7 +557,7 @@
             mode:'vertical',
             controls:false,
             });
-    
+        
         /*contents_nail 슬라이드 갤러리*/
         $('.show').bxSlider({
             auto:true,
@@ -388,11 +572,13 @@
             pager:false,
         });
     });
-                                    </code></pre>
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
                                 </div>
-                                <!-- modal_itme -->
+                                <!-- modal_jQuery -->
                             </div>
-                            <!-- modal_jQuery -->
+                            <!-- btn -->
                         </div>
                         <!-- sec3__items__item2 -->
                     </div>
@@ -431,7 +617,163 @@
                                 <a href="#">html </a>
                                 <a href="#">css</a>
                                 <a href="#">jquery</a>
+
+                                <!-- modals -->
+                                <div class="modals modal_html">
+                                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="xml">
+    &lt;nav class="gnb"&gt;
+        &lt;ul&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;APPAREL&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;아우터&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;여성전용&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;상의&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;하의&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;데님&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;CAP&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;볼캠&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;스냅캡&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;비니&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;HAT&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;기타모자&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;SHOES&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;운동화&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;샌들&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;슬리퍼&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;BAG&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;백팩&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;힙색&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;크로스백&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;버킷백&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;도트백&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;파우치&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;ACC &amp; PET&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;악세사리&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;PET&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;쥬얼리&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="main"&gt;
+                &lt;a href="#" class="m"&gt;KIDS&lt;/a&gt;
+                &lt;ul class="sub"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;아우터&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;상의&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;하의&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;모자&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;슈즈&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;악세사리&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_html -->
+                                <div class="modals modal_css">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="css">
+    .gnb{
+        position: absolute;
+        right: 263px; top: 48px;
+        
+    }
+    .gnb ul{display: flex;}
+    .gnb ul li a{ 
+        color: white; 
+        font-size: 18px; 
+        font-weight: 400;
+    }
+    .gnb .main:nth-child(1){margin-right: 52px;}
+    .gnb .main:nth-child(2){margin-right: 38px;}
+    .gnb .main:nth-child(3){margin-right: 65px;}
+    .gnb .main:nth-child(4){margin-right: 34px;}
+    .gnb .main:nth-child(5){margin-right: 53px;}
+    .gnb .m:hover{color: #fcf895;}
+    .gnb .sub li:hover a{color: #fcf895;}
+    .gnb .sub{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        top: 33px; 
+        width: 100%; height: 0px;
+    }
+    .gnb .sub li {height:50px;}
+    .gnb .sub a{
+        font-size: 16px;
+        font-family: 'Noto Sans KR';
+    }
+    .gnb_bgbox {
+        position:absolute; 
+        z-index:-10;
+        left:0px; top:100px; 
+        width:100%; 
+        height:0px; 
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_css -->
+                                <div class="modals modal_jQuery">
+                                    <div class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+                                    <div class="modal_itme">
+                                        <pre><code class="javascript">
+    $(function(){
+        /*gnb 메뉴 내려오는 동작*/
+        let gnb = $('.gnb'),
+            sub = $('.sub'),
+            gnbBgBox = $('.gnb_bgbox'),
+            count = 0,
+            target = 0;
+    
+    
+        function smoothMove(){
+            count = count + 0.1*(target - count); 
+            gnbBgBox.css({height: count+'px'});
+            for(let i=0; i&lt;=6; i++){
+                sub.eq(i).css({height: count+'px'});
+            }
+        }
+        setInterval(smoothMove,10);
+    
+        gnb.mouseover(function(){
+            target = 320;
+        }).mouseleave(function(){
+            target = 0;
+        });
+    });
+                                        </code></pre>
+                                    </div>
+                                    <!-- modal_itme -->
+                                </div>
+                                <!-- modal_jQuery -->
                             </div>
+                            <!-- btn -->
                         </div>
                         <!-- sec3__items__item4 -->
                     </div>
@@ -585,7 +927,7 @@
                         </div>
                         <div class="desc">
                             <div class="desc_item">
-                                <h3 >music app</h3>
+                                <h3>chatting app</h3>
                                 <p><span><i class="fa-solid fa-quote-left"></i></span>
                                     nodejs를 통해 socket.io 라이브러리를 사용하여 양방향 채팅이 가능하도록 하였고 name, message, time 등의 정보를 객체화하여 불러오는 방식을 이용해 채팅앱을 제작하였습니다.
                                     <span><i class="fa-solid fa-quote-right"></i></span>
@@ -1011,7 +1353,7 @@
                     pin: true,
                     start: "top top",
                     markers: false,
-                    end: sec2WrapWidth
+                    end: sec2WrapWidth,
                 },
                 x: -horizontal2,
                 ease: "none"
@@ -1041,8 +1383,6 @@
             
             let eyeEffect = document.querySelectorAll(".eyes .black");
             
-            
-
             eyeEffect.forEach(eye=>{
                 let x =(eye.getBoundingClientRect().left)+(eye.clientWidth/2);
                 let y =(eye.getBoundingClientRect().top)+(eye.clientHeight/2);
@@ -1058,6 +1398,58 @@
 
         //팝업창
         hljs.initHighlightingOnLoad();
+
+        //클릭이벤트 시 팝업창 보이기
+        // let modalBtn = document.querySelectorAll('.btn a');
+        // let modals = document.querySelectorAll('.modals');
+        // // console.log(modal);
+
+        // for(let i=0; i<=modalBtn.length; i++){
+        //     modalBtn.addEventListener('click', ()=>{
+        //         modals.classList.add('active');
+        //     })
+        // }
+
+
+
+
+        $(function(){
+            $('.sec3__items__item1 .btn a:nth-child(2)').click(()=>{
+                $(this).find('.modals').eq(0).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item1 .btn a:nth-child(3)').click(()=>{
+                $(this).find('.modals').eq(1).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item1 .btn a:nth-child(4)').click(()=>{
+                $(this).find('.modals').eq(2).slideDown().addClass('ative');
+            });
+
+            $('.sec3__items__item2 .btn a:nth-child(2)').click(()=>{
+                $(this).find('.modals').eq(3).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item2 .btn a:nth-child(3)').click(()=>{
+                $(this).find('.modals').eq(4).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item2 .btn a:nth-child(4)').click(()=>{
+                $(this).find('.modals').eq(5).slideDown().addClass('ative');
+            });
+
+            $('.sec3__items__item4 .btn a:nth-child(2)').click(()=>{
+                $(this).find('.modals').eq(6).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item4 .btn a:nth-child(3)').click(()=>{
+                $(this).find('.modals').eq(7).slideDown().addClass('ative');
+            });
+            $('.sec3__items__item4 .btn a:nth-child(4)').click(()=>{
+                $(this).find('.modals').eq(8).slideDown().addClass('ative');
+            });
+
+
+            // close 버튼
+            $('.close').click(()=>{
+                $('.modals').slideUp().removeClass('ative');
+            });
+        });
     </script>
 </body>
 </html>
