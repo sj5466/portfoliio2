@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /* layout */
+#body{
+    background: #000;
+}
 #header{
     position: fixed;
     left: 0px;
@@ -8,18 +11,33 @@
     z-index: 1000;
     font-family: Abel, sans-serif;
     width: 100%;
+    transform: translateY(-100px);
+}
+#header.active{
+    animation: header 1s forwards;
 }
 #main{
-    /* position: relative; */
     overflow: hidden;
 }
+.wrapper{
+    display: none;
+}
+.wrapper.active{
+    display: block;
+}
 #section1{
+    border-radius: 2vw;
     height: 100vh;
     background: #f1f1f1;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform: scale(0.7);
+}
+#section1.active{
+    border-radius: 0;
+    animation: scale 1s ease-in-out forwards;
 }
 #section2{
     background: #f1f1f1;
@@ -46,6 +64,7 @@
     /* overflow: hidden; */
     display: flex;
     left: 0;
+    background: #fff;
     text-transform: uppercase;
     font-family: Abel, sans-serif;
 }
@@ -66,7 +85,16 @@
     font-family: Abel, sans-serif;
     color: #fff;
 }
-
+@keyframes header{
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes scale{
+    100%{
+        transform: scale(1);
+    }
+}
 /* eye */
 .sec1__title__item .eyes,
 .sec2__title3__item1 .eyes,
@@ -209,9 +237,29 @@
 .sec1__title__item {
     padding: 10vw 3.5vw 9vw;
 }
+.sec1__title__item .t2{
+    display: flex;
+}
+.sec1__title__item .eye__effect{
+    width: 0vw; 
+}
+.sec1__title__item .eye__effect.active{
+    animation: eye 1s ease-in-out forwards;
+}
+.sec1__title__item .eyes{
+    opacity: 0;
+}
+.sec1__title__item .eyes.active{
+    animation:eyeOpacity 1.5s forwards ;
+}
+
 .sec1__under{
+    opacity: 0;
     font-family: Abel, sans-serif;
     border-top: 1px solid #b3b3b3;
+}
+.sec1__under.active{
+    animation: under 2s forwards ;
 }
 .sec1__under__btn{
     padding: 1vw 3.5vw;
@@ -325,6 +373,58 @@
 }
 .sec1__down__under:hover .arrow path{
     fill:#fff;
+}
+
+/* loading */
+.loadgin .t1{
+    position: absolute;
+    left: 70px;
+    bottom: 50px;
+    font-size: 30px;
+}
+.loadgin .t2{
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    font-size: 12vw;
+    font-family: 'Staatliches', cursive;
+}
+.loadgin .t2.text-blink{
+    animation: blink 0.7s ease-in-out 0.1s;
+}
+
+@keyframes blink { 
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes eye{ 
+    100%{
+        margin-right: 10px;
+        width: 30%;
+    }
+}
+@keyframes eyeOpacity{
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes under{ /*.main .under */
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* section2 */
