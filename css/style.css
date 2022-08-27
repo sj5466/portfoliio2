@@ -2,7 +2,12 @@
 
 /* layout */
 #body{
+    overflow: hidden;
     background: #000;
+}
+#body.active{
+    overflow: auto;
+    background: #f1f1f1;
 }
 #header{
     position: fixed;
@@ -19,12 +24,12 @@
 #main{
     overflow: hidden;
 }
-.wrapper{
+/* .wrapper{
     display: none;
 }
 .wrapper.active{
     display: block;
-}
+} */
 #section1{
     border-radius: 2vw;
     height: 100vh;
