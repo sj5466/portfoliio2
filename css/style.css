@@ -1546,18 +1546,6 @@
         transform: translateX(-72%);
     }
 }
-
-/* modals */
-
-/* .modals.modal_html{
-    display: none;
-}
-.modals.modal_css{
-    display: none;
-}
-.modals.modal_jQuery{
-    display: none;
-} */
 .modals.ative{
     display: flex;
 }
@@ -1603,10 +1591,6 @@
     align-items: center;
     background: red;
 }
-
-
-
-
 
 /* media */
 @media (max-width: 1150px){
